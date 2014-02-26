@@ -1,0 +1,61 @@
+/**
+ * @author: Christopher Forsberg
+ * @description: Image shuffler with text description on
+ *               a per-image basis.
+ *               
+ * @license: Free of use, with attribution.
+ */
+
+body, ul, li, h1, h2, h3{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #121212;
+	font-family: Courier, sans-serif;
+	font-size: 11px;
+	color: #fff;
+	overflow-x: hidden;
+}
+
+/* Image container style */
+.container {
+	width: 580px;
+	height: 450px;
+	position: absolute;
+	top: 50%;
+	margin-top: -175px;
+	left: 50%;
+	margin-left: -240px;
+}
+
+.imageShuffler img {
+	border: 10px solid #fff;
+	position: absolute;
+	-moz-box-shadow: 1px 1px 10px #000;
+	-webkit-box-shadow: 1px 1px 10px #000;
+	box-shadow: 1px 1px 10px #000;
+	left: 50%;
+	top: 50%;
+}
+
+/* Next photo button */
+a.imageShuffler-next {
+	position: absolute;
+	width: 56px;
+	height: 56px;
+	z-index: 200;
+	cursor: pointer;
+	background: #000 url(../images/next_photo.png) no-repeat 50% 50%;
+	opacity: 0.6;
+	filter: progid: DXImageTransform.Microsoft.Alpha(opacity=60);	
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+a.imageShuffler-next:hover {
+	opacity: 0.8;
+	filter: progid: DXImageTransform.Microsoft.Alpha(opacity=80);	
+}

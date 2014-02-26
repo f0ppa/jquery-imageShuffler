@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image shuffler</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+    </head>
+    <body>
+		<div id="container" class="container">
+		</div>	
+	
+		<!-- Load jQuery -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script type="text/javascript" src="../src/jquery.imageShuffler.js"></script>
+        <script>
+            $('#container').imageShuffler({ images: [{ src: 'http://placekitten.com/800/600' }, { src: 'http://placekitten.com/600/800' },] });
+        </script>
+    </body>
+</html>
